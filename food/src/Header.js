@@ -12,10 +12,24 @@ export default function Header() {
           textAlign: "center",
           alignItems: "center",
           height: "80px",
-          background: "orange",
+          background: "#E1EACD",
         }}
       >
-        <h1 style={{ margin: "0", marginLeft: "15px" }}>UrHealth</h1>
+        <h1
+          style={{
+            margin: "0",
+            marginLeft: "15px",
+            fontFamily: "'Roboto', sans-serif",
+            fontSize: "30px",
+            fontWeight: "900",
+            letterSpacing: "2px",
+            textTransform: "uppercase",
+            color: "#4CAF50", // اللون الأخضر
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)", // ظل للنص لإضافة عمق
+          }}
+        >
+          XHEALTH
+        </h1>
 
         <div
           style={{
