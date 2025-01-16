@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "./img/88.png";
+import img1 from "./img/00.png";
 import { Button } from "@mui/material";
 
 export default function Introduce() {

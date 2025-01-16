@@ -46,6 +46,7 @@ export default function Header() {
               marginRight: "30px",
               fontSize: "20px",
               textTransform: "none",
+              color: "black",
             }}
           >
             About Us
@@ -55,6 +56,7 @@ export default function Header() {
               marginRight: "30px",
               fontSize: "20px",
               textTransform: "none",
+              color: "black",
             }}
           >
             Meals
@@ -64,6 +66,7 @@ export default function Header() {
               marginRight: "30px",
               fontSize: "20px",
               textTransform: "none",
+              color: "black",
             }}
           >
             Pricing
