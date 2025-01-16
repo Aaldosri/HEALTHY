@@ -39,7 +39,7 @@ export default function AboutUs() {
             <hr></hr>
           </Grid>
           <Grid size={6}>
-            <div
+            {/* <div
               style={{
                 height: "60vh",
                 display: "flex",
@@ -50,10 +50,42 @@ export default function AboutUs() {
               }}
             >
               <img style={{ height: "300px" }} src={img1} />
+            </div> */}
+            <div
+              style={{
+                height: "60vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: "350px",
+                  height: "350px",
+                  borderRadius: "50%", // خلفية دائرية
+                  backgroundColor: "#f0f0f0",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.2)", // تأثير الظل حول الخلفية
+                  background: "#355f2eb8",
+                }}
+              >
+                <img
+                  style={{
+                    height: "300px",
+                    borderRadius: "50%", // تجعل الصورة دائرية أيضًا داخل الخلفية
+                  }}
+                  src={img1}
+                  alt="image"
+                />
+              </div>
             </div>
           </Grid>
           <Grid size={6}>
-            <div
+            {/* <div
               style={{
                 height: "60vh",
                 display: "flex",
@@ -64,6 +96,38 @@ export default function AboutUs() {
               }}
             >
               <img style={{ height: "300px" }} src={img2} />
+            </div> */}
+            <div
+              style={{
+                height: "60vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: "350px",
+                  height: "350px",
+                  borderRadius: "50%", // خلفية دائرية
+                  backgroundColor: "#f0f0f0",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.2)", // تأثير الظل حول الخلفية
+                  background: "#355f2eb8",
+                }}
+              >
+                <img
+                  style={{
+                    height: "300px",
+                    borderRadius: "50%", // تجعل الصورة دائرية أيضًا داخل الخلفية
+                  }}
+                  src={img2}
+                  alt="image"
+                />
+              </div>
             </div>
           </Grid>
           <Grid size={6}>
@@ -99,7 +163,7 @@ export default function AboutUs() {
             <hr></hr>
           </Grid>
           <Grid size={6}>
-            <div
+            {/* <div
               style={{
                 height: "60vh",
                 display: "flex",
@@ -110,6 +174,38 @@ export default function AboutUs() {
               }}
             >
               <img style={{ height: "300px" }} src={img4} />
+            </div> */}
+            <div
+              style={{
+                height: "60vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: "350px", // عرض الخلفية
+                  height: "350px", // ارتفاع الخلفية
+                  borderRadius: "50%", // جعلها دائرية
+                  backgroundColor: "#f0f0f0", // لون الخلفية
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.2)", // ظل حول الخلفية
+                  background: "#355f2eb8",
+                }}
+              >
+                <img
+                  style={{
+                    height: "300px",
+                    borderRadius: "50%", // جعل الصورة دائرية داخل الخلفية
+                  }}
+                  src={img4}
+                  alt="image"
+                />
+              </div>
             </div>
           </Grid>
         </Grid>
