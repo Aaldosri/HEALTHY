@@ -7,10 +7,6 @@ import img4 from "./img/App.png";
 
 export default function AboutUs() {
   return (
-    // <div style={{ background: "orange", height: "80vh", margin: "auto" }}>
-    //   <h1>Discover some of our strengths!</h1>
-    // </div>
-
     <Container
       style={{
         height: "80vh",
@@ -39,18 +35,6 @@ export default function AboutUs() {
             <hr></hr>
           </Grid>
           <Grid size={6}>
-            {/* <div
-              style={{
-                height: "60vh",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-                textAlign: "center",
-                alignItems: "center",
-              }}
-            >
-              <img style={{ height: "300px" }} src={img1} />
-            </div> */}
             <div
               style={{
                 height: "60vh",
@@ -85,18 +69,6 @@ export default function AboutUs() {
             </div>
           </Grid>
           <Grid size={6}>
-            {/* <div
-              style={{
-                height: "60vh",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-                textAlign: "center",
-                alignItems: "center",
-              }}
-            >
-              <img style={{ height: "300px" }} src={img2} />
-            </div> */}
             <div
               style={{
                 height: "60vh",
@@ -163,18 +135,6 @@ export default function AboutUs() {
             <hr></hr>
           </Grid>
           <Grid size={6}>
-            {/* <div
-              style={{
-                height: "60vh",
-                display: "flex",
-                justifyContent: "center",
-                alignContent: "center",
-                textAlign: "center",
-                alignItems: "center",
-              }}
-            >
-              <img style={{ height: "300px" }} src={img4} />
-            </div> */}
             <div
               style={{
                 height: "60vh",
