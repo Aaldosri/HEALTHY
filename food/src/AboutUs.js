@@ -19,7 +19,14 @@ export default function AboutUs() {
       <div style={{ height: "150vh" }}>
         <Grid style={{ height: "120vh" }} container spacing={2}>
           <Grid size={6}>
-            <h1 style={{ margin: "0px", marginTop: "50px", fontSize: "90px" }}>
+            <h1
+              style={{
+                margin: "0px",
+                marginTop: "50px",
+                fontSize: "90px",
+                color: "#00000085",
+              }}
+            >
               1
             </h1>
             <h1 style={{ margin: "0px", padding: "0" }}>
@@ -55,12 +62,20 @@ export default function AboutUs() {
                   alignItems: "center",
                   boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.2)", // تأثير الظل حول الخلفية
                   background: "#355f2eb8",
+                  transition: "transform 0.3s ease-in-out",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
                 }}
               >
                 <img
                   style={{
                     height: "300px",
                     borderRadius: "50%", // تجعل الصورة دائرية أيضًا داخل الخلفية
+                    transition: "transform 0.3s ease-in-out",
                   }}
                   src={img1}
                   alt="image"
@@ -89,12 +104,20 @@ export default function AboutUs() {
                   alignItems: "center",
                   boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.2)", // تأثير الظل حول الخلفية
                   background: "#355f2eb8",
+                  transition: "transform 0.3s ease-in-out",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
                 }}
               >
                 <img
                   style={{
                     height: "300px",
                     borderRadius: "50%", // تجعل الصورة دائرية أيضًا داخل الخلفية
+                    transition: "transform 0.3s ease-in-out",
                   }}
                   src={img2}
                   alt="image"
@@ -103,7 +126,14 @@ export default function AboutUs() {
             </div>
           </Grid>
           <Grid size={6}>
-            <h1 style={{ margin: "0px", marginTop: "50px", fontSize: "90px" }}>
+            <h1
+              style={{
+                margin: "0px",
+                marginTop: "50px",
+                fontSize: "90px",
+                color: "#00000085",
+              }}
+            >
               2
             </h1>
             <h1 style={{ margin: "0px", padding: "0" }}>
@@ -119,7 +149,14 @@ export default function AboutUs() {
             <hr></hr>
           </Grid>
           <Grid size={6}>
-            <h1 style={{ margin: "0px", marginTop: "50px", fontSize: "90px" }}>
+            <h1
+              style={{
+                margin: "0px",
+                marginTop: "50px",
+                fontSize: "90px",
+                color: "#00000085",
+              }}
+            >
               3
             </h1>
             <h1 style={{ margin: "0px", padding: "0" }}>
@@ -155,12 +192,20 @@ export default function AboutUs() {
                   alignItems: "center",
                   boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.2)", // ظل حول الخلفية
                   background: "#355f2eb8",
+                  transition: "transform 0.3s ease-in-out",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
                 }}
               >
                 <img
                   style={{
                     height: "300px",
                     borderRadius: "50%", // جعل الصورة دائرية داخل الخلفية
+                    transition: "transform 0.3s ease-in-out",
                   }}
                   src={img4}
                   alt="image"
