@@ -9,7 +9,7 @@ export default function AboutUs() {
   return (
     <Container
       style={{
-        height: "80vh",
+        // height: "200vh",
         margin: "auto",
       }}
       maxWidth="lg"

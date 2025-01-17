@@ -5,6 +5,7 @@ import Introduce from "./Introduce";
 import { Button } from "@mui/material";
 import AboutUs from "./AboutUs";
 import Container from "@mui/material/Container";
+import Meals from "./Meals";
 
 function App() {
   return (
@@ -17,21 +18,42 @@ function App() {
         <Introduce />
       </div>
 
-      <Container style={{ marginTop: "120px" }}>
-        <span
-          style={{
-            fontSize: "25px",
-            textTransform: "none",
-            marginTop: "50px",
-            color: "#355F2E",
-          }}
-        >
-          ABOUT US
-        </span>
-      </Container>
+      <div>
+        <Container style={{ marginTop: "120px" }}>
+          <span
+            style={{
+              fontSize: "25px",
+              textTransform: "none",
+              marginTop: "50px",
+              color: "#355F2E",
+            }}
+          >
+            ABOUT US
+          </span>
+        </Container>
+      </div>
 
       <div>
         <AboutUs />
+      </div>
+
+      <div>
+        <Container style={{ marginTop: "30vh" }}>
+          <span
+            style={{
+              fontSize: "25px",
+              textTransform: "none",
+              marginTop: "50px",
+              color: "#355F2E",
+            }}
+          >
+            ABOUT US
+          </span>
+        </Container>
+      </div>
+
+      <div>
+        <Meals />
       </div>
     </div>
   );
