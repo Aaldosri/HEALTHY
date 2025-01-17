@@ -9,19 +9,19 @@ export default function Meals() {
         style={{
           display: "flex",
           justifyContent: "space-around",
+          background: "#e1eacd",
         }}
       >
         <div>
-          <Container>
-            <h1>Our Meals</h1>
-            <h2>HH</h2>
-          </Container>
-
           <Grid
             style={{ display: "flex", justifyContent: "space-around" }}
             container
             spacing={2}
           >
+            <Grid size={10}>
+              <h1>Our Meals</h1>
+              <h2>delicious healthy meals</h2>
+            </Grid>
             <Grid size={4}>
               <h1
                 style={{

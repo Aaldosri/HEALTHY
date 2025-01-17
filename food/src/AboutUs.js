@@ -16,8 +16,8 @@ export default function AboutUs() {
     >
       <h1 style={{ color: "#355F2E" }}>Discover some of our advantages!</h1>
 
-      <div style={{ height: "150vh" }}>
-        <Grid style={{ height: "120vh" }} container spacing={2}>
+      <div style={{ height: "100%" }}>
+        <Grid style={{ height: "100%" }} container spacing={2}>
           <Grid size={6}>
             <h1
               style={{
