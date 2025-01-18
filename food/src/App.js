@@ -2,25 +2,54 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Header";
 import Introduce from "./Introduce";
-import { Button } from "@mui/material";
 import AboutUs from "./AboutUs";
 import Container from "@mui/material/Container";
 import Meals from "./Meals";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
+import { useRef } from "react";
 
 function App() {
+  const AboutUsRef = useRef(null);
+  const MealsRef = useRef(null);
+  const PricingRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    const offset = -100; // المسافة الإضافية (يمكنك ضبطها حسب الحاجة)
+    const elementPosition =
+      ref.current.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition + offset,
+      behavior: "smooth",
+    });
+  };
+
+  // دالة التمرير إلى أعلى الصفحة
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="App">
       <div>
-        <Header />
+        <Header
+          scrollToAbouUs={() => scrollToSection(AboutUsRef)}
+          scrollToMeals={() => scrollToSection(MealsRef)}
+          scrollToPricing={() => scrollToSection(PricingRef)}
+        />
       </div>
 
       <div style={{ background: "#e1eacd" }}>
-        <Introduce />
+        <Introduce
+          scrollToAbouUs={() => scrollToSection(AboutUsRef)}
+          scrollToPricing={() => scrollToSection(PricingRef)}
+        />
       </div>
 
-      <div>
+      <div ref={AboutUsRef}>
         <Container style={{ marginTop: "120px" }}>
           <span
             style={{
@@ -39,26 +68,11 @@ function App() {
         <AboutUs />
       </div>
 
-      <div style={{ background: "#e1eacd", paddingTop: "10vh" }}>
-        {/* <Container> */}
-        <span
-          style={{
-            fontSize: "25px",
-            textTransform: "none",
-            color: "#355F2E",
-            marginLeft: "160px",
-          }}
-        >
-          MEALS
-        </span>
-        {/* </Container> */}
-      </div>
-
-      <div>
+      <div ref={MealsRef}>
         <Meals />
       </div>
 
-      <div>
+      <div ref={PricingRef}>
         <div style={{ marginTop: "20vh" }}>
           <Container>
             <span
@@ -75,7 +89,7 @@ function App() {
       </div>
 
       <div>
-        <Pricing />
+        <Pricing scrollStart={() => scrollToTop()} />
       </div>
 
       <Footer />

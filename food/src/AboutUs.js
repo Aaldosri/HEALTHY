@@ -14,7 +14,9 @@ export default function AboutUs() {
       }}
       maxWidth="lg"
     >
-      <h1 style={{ color: "#355F2E" }}>Discover some of our advantages!</h1>
+      <h1 style={{ color: "#355F2E", fontSize: "40px" }}>
+        Discover some of our advantages
+      </h1>
 
       <div style={{ height: "100%" }}>
         <Grid style={{ height: "100%" }} container spacing={2}>
@@ -32,7 +34,13 @@ export default function AboutUs() {
             <h1 style={{ margin: "0px", padding: "0" }}>
               Deliciously Tailored Healthy Meals for Your Taste and Well-being
             </h1>
-            <h2>
+            <h2
+              style={{
+                lineHeight: "1.8", // زيادة المسافة بين الأسطر
+                marginBottom: "20px", // إضافة مسافة أسفل النص
+                fontSize: "18px", // تعديل حجم الخط إذا كنت ترغب
+              }}
+            >
               Indulge in healthy and diverse meals, thoughtfully tailored to
               your personal taste and preferences, crafted with the finest,
               highest quality ingredients to provide both nourishment and
@@ -140,7 +148,13 @@ export default function AboutUs() {
               Precisely Crafted Meals for a Balanced and Nutrient-Rich Diet
             </h1>
 
-            <h2>
+            <h2
+              style={{
+                lineHeight: "1.8", // زيادة المسافة بين الأسطر
+                marginBottom: "20px", // إضافة مسافة أسفل النص
+                fontSize: "18px", // تعديل حجم الخط إذا كنت ترغب
+              }}
+            >
               We provide meals that cover your needs for protein, vitamins,
               minerals, and carbohydrates, and we make sure to calculate them
               accurately, ensuring a balanced and nutritious diet tailored to
@@ -164,7 +178,13 @@ export default function AboutUs() {
               Delivery
             </h1>
 
-            <h2>
+            <h2
+              style={{
+                lineHeight: "1.8", // زيادة المسافة بين الأسطر
+                marginBottom: "20px", // إضافة مسافة أسفل النص
+                fontSize: "18px", // تعديل حجم الخط إذا كنت ترغب
+              }}
+            >
               A flexible and user-friendly app that allows you to place orders,
               add your favorite options, and ensures that your meal is delivered
               exactly as you requested

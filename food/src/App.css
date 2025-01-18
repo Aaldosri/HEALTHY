@@ -1,4 +1,36 @@
 .App {
   /* text-align: center; */
   /* background-color: #e1eacd; */
+  font-family: "Rubik-2";
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(fonts/Rubik-Bold.ttf);
+}
+@font-face {
+  font-family: "Rubik-2";
+  src: url(fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "Rubik-3";
+  src: url(fonts/Rubik-Light.ttf);
+}
+
+.btn {
+  box-shadow: none; /* إزالة الظل الافتراضي */
+  text-transform: none; /* إبقاء النص كما هو */
+  transition: color 0.3s ease, background-color 0.3s ease; /* تأثير ناعم للتغيرات */
+  color: black; /* اللون الأساسي للنص */
+  background: none; /* لا خلفية */
+}
+
+.btn:hover {
+  color: #355f2e; /* تغيير اللون عند التمرير */
+  background: none; /* التأكد من عدم وجود خلفية */
+}
+
+.btn:focus {
+  box-shadow: none !important; /* إزالة الظل عند التركيز */
+  outline: none; /* إزالة حدود التركيز */
 }
