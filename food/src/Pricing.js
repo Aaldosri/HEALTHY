@@ -4,6 +4,10 @@ import { Container, Card, CardContent, Typography } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 import { Button } from "@mui/material";
 import { FaDollarSign } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // استيراد ملف CSS الخاص بـ AOS
+
+AOS.init({ duration: 500 });
 
 export default function Pricing({ scrollStart }) {
   return (
@@ -26,6 +30,8 @@ export default function Pricing({ scrollStart }) {
             }}
           >
             <Card
+              data-aos="fade-up"
+              data-aos-delay="-200"
               sx={{
                 width: 345,
                 height: 500,
@@ -104,6 +110,8 @@ export default function Pricing({ scrollStart }) {
               </Button>
             </Card>
             <Card
+              data-aos="fade-up"
+              data-aos-delay="0"
               sx={{
                 width: 345,
                 transition: "transform 0.3s ease-in-out",
@@ -195,6 +203,8 @@ export default function Pricing({ scrollStart }) {
               </Button>
             </Card>
             <Card
+              data-aos="fade-up"
+              data-aos-delay="0"
               sx={{
                 position: "relative",
                 width: 345,
