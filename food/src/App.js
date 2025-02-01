@@ -50,7 +50,7 @@ function App() {
       </div>
 
       <div ref={AboutUsRef}>
-        <Container style={{ marginTop: "120px" }}>
+        <Container className="aboutUs">
           <span
             style={{
               fontSize: "25px",
@@ -73,7 +73,7 @@ function App() {
       </div>
 
       <div ref={PricingRef}>
-        <div style={{ marginTop: "20vh" }}>
+        <div className="pricing">
           <Container>
             <span
               style={{

@@ -12,11 +12,9 @@ AOS.init({ duration: 500 });
 export default function Pricing({ scrollStart }) {
   return (
     <>
-      <div style={{ height: "70vh" }}>
+      <div className="div-pricing">
         <Container maxWidth="xl">
-          <h1 style={{ marginLeft: "167px", color: "#355F2E" }}>
-            Choose the Best Deal for You
-          </h1>
+          <h1 className="h1-pricing">Choose the Best Deal for You</h1>
           <div
             style={{ display: "flex", justifyContent: "space-around" }}
           ></div>

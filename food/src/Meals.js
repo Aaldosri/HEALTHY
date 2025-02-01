@@ -25,21 +25,12 @@ export default function Meals() {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          background: "#e1eacd",
-          height: "80vh",
-        }}
-      >
-        <div style={{ width: "60%" }}>
+      <div className="div-meals">
+        <div className="div-div-meals">
           <Grid
             style={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
               alignContent: "center",
               flexDirection: "column",
               alignItems: "flex-start",
@@ -59,16 +50,7 @@ export default function Meals() {
               MEALS
             </span>
 
-            <h1
-              style={{
-                margin: "0px",
-                padding: "0",
-                marginLeft: "10px",
-                fontSize: "35px",
-                color: "#355F2E",
-                width: "700px",
-              }}
-            >
+            <h1 className="h1-meals">
               Over 1000+ healthy recipes crafted to suit your taste and promote
               your well-being
             </h1>

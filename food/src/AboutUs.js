@@ -10,6 +10,7 @@ export default function AboutUs() {
     <Container
       style={{
         // height: "200vh",
+        padding: "50px",
         margin: "auto",
       }}
       maxWidth="lg"
@@ -50,15 +51,7 @@ export default function AboutUs() {
             <hr></hr>
           </Grid>
           <Grid size={6}>
-            <div
-              style={{
-                height: "60vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: "center",
-              }}
-            >
+            <div className="div-aboutUs1">
               <div
                 style={{
                   width: "350px",
@@ -92,15 +85,7 @@ export default function AboutUs() {
             </div>
           </Grid>
           <Grid size={6}>
-            <div
-              style={{
-                height: "60vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: "center",
-              }}
-            >
+            <div className="div-aboutUs2">
               <div
                 style={{
                   width: "350px",
@@ -192,15 +177,7 @@ export default function AboutUs() {
             <hr></hr>
           </Grid>
           <Grid size={6}>
-            <div
-              style={{
-                height: "60vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: "center",
-              }}
-            >
+            <div className="div-aboutUs3">
               <div
                 style={{
                   width: "350px", // عرض الخلفية

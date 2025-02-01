@@ -11,7 +11,7 @@ export default function Header({
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-around",
           alignContent: "center",
           textAlign: "center",
           alignItems: "center",
@@ -107,12 +107,12 @@ export default function Header({
             Pricing
           </Button>
           <Button
-            className="btn"
+            className="btn-join"
             style={{
               fontFamily: "Rubik-2",
               width: "10%",
               marginRight: "30px",
-              fontSize: "20px",
+              fontSize: "22px",
               textTransform: "none",
               background: "#355F2E", // الخلفية ثابتة
               color: "white", // النص أبيض في الخلفية الخضراء

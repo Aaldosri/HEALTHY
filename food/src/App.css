@@ -34,3 +34,192 @@
   box-shadow: none !important; /* إزالة الظل عند التركيز */
   outline: none; /* إزالة حدود التركيز */
 }
+
+/* Introduce */
+
+.div-intro {
+  height: 70vh;
+  align-content: center;
+}
+
+.div-div-intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.img {
+  height: 600px;
+}
+
+/* About Us */
+
+.div-aboutUs1 {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.div-aboutUs2 {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.div-aboutUs3 {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutUs {
+  margin-top: 10vh;
+}
+
+/* Meals */
+
+.div-meals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e1eacd;
+  min-height: 80vh;
+  padding: 50px;
+}
+
+.div-div-meals {
+  width: 60%;
+}
+
+.h1-meals {
+  margin: 0;
+  padding: 50px;
+  margin-left: 10px;
+  font-size: 35px;
+  color: #355f2e;
+  width: 700px;
+}
+
+.span-meals {
+  font-size: 25px;
+  text-transform: none;
+  color: #355f2e;
+  margin-left: 2vh;
+}
+
+.grid-meals {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Pricing */
+
+.pricing {
+  padding: 50px;
+}
+
+.h1-pricing {
+  margin-left: 200px;
+  color: #355f2e;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  background-color: #e1eacd;
+  margin-top: 20vh;
+}
+
+@media (max-width: 1374px) {
+  .btn-join {
+    font-size: 17px !important;
+  }
+  .div-intro {
+    height: auto !important; /* يزيل الارتفاع */
+  }
+}
+
+@media (max-width: 1260px) {
+  .div-meals {
+    min-height: 100vh;
+    display: block;
+  }
+  .div-div-meals {
+    width: 100%;
+  }
+  .span-meals {
+    width: 100%;
+
+    text-align: center;
+  }
+}
+@media (max-width: 1189px) {
+  .btn-join {
+    font-size: 12px !important;
+  }
+  .h1-meals {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 1096px) {
+  .img {
+    height: 550px;
+  }
+}
+@media (max-width: 1050px) {
+  .img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .img {
+    height: 350px;
+  }
+  .aboutUs {
+    margin-top: 0;
+    padding-top: 50px;
+  }
+  .div-aboutUs1 {
+    height: auto !important; /* يزيل الارتفاع */
+  }
+  .div-aboutUs2 {
+    height: auto !important; /* يزيل الارتفاع */
+  }
+  .div-aboutUs3 {
+    height: auto !important; /* يزيل الارتفاع */
+  }
+  footer {
+    height: 10vh;
+    margin-top: 5vh;
+  }
+  .div-meals {
+    min-height: 10vh !important;
+  }
+  .h1-pricing {
+    text-align: center;
+    margin-left: 0;
+  }
+  .div-intro {
+    padding: 50px;
+  }
+}

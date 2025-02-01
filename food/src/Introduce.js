@@ -5,15 +5,8 @@ import { Button } from "@mui/material";
 export default function Introduce({ scrollToAbouUs, scrollToPricing }) {
   return (
     <>
-      <div style={{ height: "70vh", alignContent: "center" }}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-            alignContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="div-intro">
+        <div className="div-div-intro">
           <div>
             <h1 style={{ width: "500px", fontSize: "50px" }}>
               Healthy meals delivered daily to your door
@@ -44,7 +37,7 @@ export default function Introduce({ scrollToAbouUs, scrollToPricing }) {
             </Button>
           </div>
 
-          <img style={{ height: "600px" }} src={img1} />
+          <img className="img" src={img1} />
         </div>
       </div>
     </>
