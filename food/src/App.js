@@ -7,9 +7,15 @@ import Container from "@mui/material/Container";
 import Meals from "./Meals";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   const AboutUsRef = useRef(null);
   const MealsRef = useRef(null);
   const PricingRef = useRef(null);
@@ -64,11 +70,11 @@ function App() {
         </Container>
       </div>
 
-      <div>
+      <div data-aos="fade-right" data-aos-delay="200">
         <AboutUs />
       </div>
 
-      <div ref={MealsRef}>
+      <div ref={MealsRef} data-aos="fade-right" data-aos-delay="200">
         <Meals />
       </div>
 

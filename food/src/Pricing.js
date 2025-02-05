@@ -6,10 +6,14 @@ import { Button } from "@mui/material";
 import { FaDollarSign } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css"; // استيراد ملف CSS الخاص بـ AOS
-
+import { useEffect } from "react";
 AOS.init({ duration: 500 });
 
 export default function Pricing({ scrollStart }) {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <div className="div-pricing">
@@ -19,6 +23,8 @@ export default function Pricing({ scrollStart }) {
             style={{ display: "flex", justifyContent: "space-around" }}
           ></div>
           <div
+            data-aos="fade-up"
+            data-aos-delay="50"
             style={{
               display: "flex",
               justifyContent: "space-around",
@@ -28,8 +34,6 @@ export default function Pricing({ scrollStart }) {
             }}
           >
             <Card
-              data-aos="fade-up"
-              data-aos-delay="-200"
               sx={{
                 width: 345,
                 height: 500,
@@ -108,8 +112,6 @@ export default function Pricing({ scrollStart }) {
               </Button>
             </Card>
             <Card
-              data-aos="fade-up"
-              data-aos-delay="0"
               sx={{
                 width: 345,
                 transition: "transform 0.3s ease-in-out",
@@ -201,8 +203,6 @@ export default function Pricing({ scrollStart }) {
               </Button>
             </Card>
             <Card
-              data-aos="fade-up"
-              data-aos-delay="0"
               sx={{
                 position: "relative",
                 width: 345,

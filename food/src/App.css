@@ -4,6 +4,11 @@
   font-family: "Rubik-2";
 }
 
+::selection {
+  background-color: #355f2e; /* لون الخلفية */
+  color: white; /* لون النص */
+}
+
 @font-face {
   font-family: "Rubik";
   src: url(fonts/Rubik-Bold.ttf);
