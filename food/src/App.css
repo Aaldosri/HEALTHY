@@ -150,6 +150,8 @@ footer {
   margin-top: 20vh;
 }
 
+/* Responsive */
+
 @media (max-width: 1374px) {
   .btn-join {
     font-size: 17px !important;
