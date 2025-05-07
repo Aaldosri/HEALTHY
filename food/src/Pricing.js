@@ -9,207 +9,66 @@ import "aos/dist/aos.css"; // استيراد ملف CSS الخاص بـ AOS
 import { useEffect } from "react";
 AOS.init({ duration: 500 });
 
+const pricingOptions = [
+  {
+    price: 330,
+    pricePerMeal: "$11 per meal",
+    mealsPerDay: "1 meal per day",
+    features: ["Free Delivery"],
+    bestDeal: false,
+  },
+  {
+    price: 599,
+    pricePerMeal: "$10 per meal",
+    mealsPerDay: "2 meal per day",
+    features: ["Free Delivery", "Discount"],
+    bestDeal: false,
+  },
+  {
+    price: 810,
+    pricePerMeal: "$9 per meal",
+    mealsPerDay: "3 meal per day",
+    features: ["Free Delivery", "Discount", "Variety of recipes"],
+    bestDeal: true,
+  },
+];
+
 export default function Pricing({ scrollStart }) {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
-    <>
-      <div className="div-pricing">
-        <Container maxWidth="xl">
-          <h1 className="h1-pricing">Choose the Best Deal for You</h1>
-          <div
-            style={{ display: "flex", justifyContent: "space-around" }}
-          ></div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="50"
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              textAlign: "center",
-              transition: "transform 0.5s ease-in-out",
-              marginTop: "50px",
-            }}
-          >
+    <div className="div-pricing">
+      <Container maxWidth="xl">
+        <h1 className="h1-pricing">Choose the Best Deal for You</h1>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            textAlign: "center",
+            marginTop: "50px",
+          }}
+        >
+          {pricingOptions.map((option, index) => (
             <Card
-              sx={{
-                width: 345,
-                height: 500,
-                background: "#e1eacd",
-
-                border: "2px solid #355F2E",
-                transition: "transform 0.3s ease-in-out",
-                padding: "20px",
-
-                "&:hover": {
-                  transform: "scale(1.1)", // يُطبق عند التمرير فوق الكارد
-                },
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-25px)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
-            >
-              <h1 style={{ color: "#355F2E", fontSize: "70px" }}>
-                {" "}
-                <FaDollarSign style={{ fontSize: "30px" }} />
-                330
-              </h1>
-              <Typography gutterBottom variant="h6" component="div">
-                per month, just $11 per meal!
-              </Typography>
-
-              <div style={{ marginLeft: "60px", marginTop: "30px" }}>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    alignContent: "center",
-
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>{" "}
-                  1 meal per day
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    alignItems: "center",
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>{" "}
-                  Free Delivery
-                </Typography>
-              </div>
-              <Button
-                variant="contained"
-                style={{
-                  width: "70%",
-                  marginTop: "12vh",
-                  padding: "10px",
-                  fontSize: "20px",
-                  background: "#355F2E",
-                  textTransform: "none",
-                }}
-                onClick={scrollStart}
-              >
-                Start Eating Healthy
-              </Button>
-            </Card>
-            <Card
-              sx={{
-                width: 345,
-                transition: "transform 0.3s ease-in-out",
-                padding: "20px",
-                background: "#e1eacd",
-
-                border: "2px solid #355F2E",
-
-                "&:hover": {
-                  transform: "translateY(-25px)", // يُطبق عند التمرير فوق الكارد
-                },
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-25px)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
-            >
-              <h1 style={{ color: "#355F2E", fontSize: "70px" }}>
-                {" "}
-                <FaDollarSign style={{ fontSize: "30px" }} />
-                599
-              </h1>
-              <Typography gutterBottom variant="h6" component="div">
-                per month, just $10 per meal!
-              </Typography>
-              <div style={{ marginLeft: "60px", marginTop: "30px" }}>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    alignContent: "center",
-
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>{" "}
-                  2 meal per day
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    alignItems: "center",
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>{" "}
-                  Free Delivery
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    alignItems: "center",
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>
-                  Discount
-                </Typography>
-              </div>
-              <Button
-                variant="contained"
-                style={{
-                  width: "70%",
-                  marginTop: "8vh",
-                  padding: "10px",
-                  fontSize: "20px",
-                  background: "#355F2E",
-                  textTransform: "none",
-                }}
-                onClick={scrollStart}
-              >
-                Start Eating Healthy
-              </Button>
-            </Card>
-            <Card
+              key={index}
               sx={{
                 position: "relative",
                 width: 345,
+                height: 500, // تحديد ارتفاع ثابت للبطاقة
+                maxHeight: "500px", // تحديد الحد الأقصى للارتفاع في حال كان المحتوى أكثر
                 background: "#e1eacd",
-                transition: "transform 0.3s ease-in-out",
-                padding: "20px",
                 border: "2px solid #355F2E",
+                padding: "20px",
+                display: "flex",
+                flexDirection: "column", // تنظيم المحتوى عموديًا
+                transition: "transform 0.3s ease-in-out",
+                "&:hover": {
+                  transform: "translateY(-25px)",
+                },
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-25px)";
@@ -218,113 +77,100 @@ export default function Pricing({ scrollStart }) {
                 e.currentTarget.style.transform = "translateY(0)";
               }}
             >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "19px", // لتوسيع الشريط للخارج قليلاً
-                  right: "-70px", // لتحريك الشريط للخارج قليلاً
-                  background: "green", // لون الخلفية
-                  color: "white",
-                  padding: "10px 30px", // لتوسيع الشريط
-                  fontWeight: "bold",
-                  fontSize: "20px",
-                  width: "190px",
-                  transform: "rotate(40deg)", // جعل النص مائلًا
-                  zIndex: 1, // لضمان ظهوره فوق المحتوى
-                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // إضافة ظل للشريط
-                }}
-              >
-                Best Deal
-              </div>
+              {option.bestDeal && (
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "19px",
+                    right: "-70px",
+                    background: "green",
+                    color: "white",
+                    padding: "10px 30px",
+                    fontWeight: "bold",
+                    fontSize: "20px",
+                    width: "190px",
+                    transform: "rotate(40deg)",
+                    zIndex: 1,
+                    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
+                  Best Deal
+                </div>
+              )}
 
               <h1 style={{ color: "#355F2E", fontSize: "70px" }}>
                 <FaDollarSign style={{ fontSize: "30px" }} />
-                810
+                {option.price}
               </h1>
+
               <Typography gutterBottom variant="h6" component="div">
-                per month. just $9 per meal!
+                per month, just {option.pricePerMeal}
               </Typography>
+
               <div style={{ marginLeft: "60px", marginTop: "30px" }}>
                 <Typography
                   variant="h6"
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    alignContent: "center",
+                    color: "text.secondary",
+                  }}
+                >
+                  <span style={{ marginRight: "8px" }}>
+                    <DoneIcon style={{ color: "green" }} />
+                  </span>
+                  {option.mealsPerDay}
+                </Typography>
 
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>{" "}
-                  3 meal per day
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    alignItems: "center",
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>{" "}
-                  Free Delivery
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    alignItems: "center",
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>
-                  Discount
-                </Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    display: "flex",
-                    alignContent: "center",
-                    alignItems: "center",
-                    color: "text.secondary",
-                  }}
-                >
-                  <span style={{ marginRight: "8px" }}>
-                    {" "}
-                    <DoneIcon style={{ color: "green" }} />
-                  </span>
-                  Variety of recipes
-                </Typography>
+                {option.features.map((feature, i) => (
+                  <Typography
+                    key={i}
+                    variant="h6"
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      color: "text.secondary",
+                    }}
+                  >
+                    <span style={{ marginRight: "8px" }}>
+                      <DoneIcon style={{ color: "green" }} />
+                    </span>
+                    {feature}
+                  </Typography>
+                ))}
               </div>
 
-              <Button
-                variant="contained"
+              {/* الزر ثابت في أسفل البطاقة باستخدام marginTop: "auto" */}
+              <div
                 style={{
-                  width: "70%",
-                  marginTop: "5vh",
-                  padding: "10px",
-                  fontSize: "20px",
-                  background: "#355F2E",
-                  textTransform: "none",
+                  marginTop: "auto",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
-                onClick={scrollStart}
               >
-                Start Eating Healthy
-              </Button>
+                <Button
+                  variant="contained"
+                  style={{
+                    width: "70%",
+                    marginTop: "auto", // يثبت الزر في الأسفل بغض النظر عن المحتوى
+                    padding: "10px",
+                    fontSize: "20px",
+                    background: "#355F2E",
+                    textTransform: "none",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                  }}
+                  onClick={scrollStart}
+                >
+                  Start Eating Healthy
+                </Button>
+              </div>
             </Card>
-          </div>
-        </Container>
-      </div>
-    </>
+          ))}
+        </div>
+      </Container>
+    </div>
   );
 }
