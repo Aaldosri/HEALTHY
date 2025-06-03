@@ -1,12 +1,10 @@
 .App {
-  /* text-align: center; */
-  /* background-color: #e1eacd; */
   font-family: "Rubik-2";
 }
 
 ::selection {
-  background-color: #355f2e; /* لون الخلفية */
-  color: white; /* لون النص */
+  background-color: #355f2e;
+  color: white;
 }
 
 @font-face {
@@ -23,21 +21,20 @@
 }
 
 .btn {
-  box-shadow: none; /* إزالة الظل الافتراضي */
-  text-transform: none; /* إبقاء النص كما هو */
-  transition: color 0.3s ease, background-color 0.3s ease; /* تأثير ناعم للتغيرات */
-  color: black; /* اللون الأساسي للنص */
-  background: none; /* لا خلفية */
+  box-shadow: none;
+  text-transform: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  background: none;
 }
 
 .btn:hover {
-  color: #355f2e; /* تغيير اللون عند التمرير */
-  background: none; /* التأكد من عدم وجود خلفية */
+  color: #355f2e;
+  background: none;
 }
 
 .btn:focus {
-  box-shadow: none !important; /* إزالة الظل عند التركيز */
-  outline: none; /* إزالة حدود التركيز */
+  box-shadow: none !important;
+  outline: none;
 }
 
 /* Introduce */
@@ -157,7 +154,7 @@ footer {
     font-size: 17px !important;
   }
   .div-intro {
-    height: auto !important; /* يزيل الارتفاع */
+    height: auto !important;
   }
 }
 
@@ -207,18 +204,15 @@ footer {
     padding-top: 50px;
   }
   .div-aboutUs1 {
-    height: auto !important; /* يزيل الارتفاع */
+    height: auto !important;
   }
   .div-aboutUs2 {
-    height: auto !important; /* يزيل الارتفاع */
+    height: auto !important;
   }
   .div-aboutUs3 {
-    height: auto !important; /* يزيل الارتفاع */
+    height: auto !important;
   }
-  footer {
-    height: 10vh;
-    margin-top: 5vh;
-  }
+
   .div-meals {
     min-height: 10vh !important;
   }
