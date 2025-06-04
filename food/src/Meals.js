@@ -1,4 +1,3 @@
-import React from "react";
 import Grid from "@mui/material/Grid2";
 import image1 from "./img/11.jpg";
 import image2 from "./img/22.jpg";
@@ -58,9 +57,9 @@ export default function Meals() {
         </div>
         <div
           style={{
-            width: "600px", // عرض ثابت لمربع الشبكة
-            margin: "0 auto", // مركزة الشبكة في الوسط
-            overflow: "hidden", // منع العناصر من الخروج خارج المربع
+            width: "600px",
+            margin: "0 auto",
+            overflow: "hidden",
           }}
         >
           <Grid container spacing={2}>
@@ -69,13 +68,13 @@ export default function Meals() {
                 <div
                   style={{
                     width: "100%",
-                    height: "200px", // ارتفاع كل صورة
+                    height: "200px",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     overflow: "hidden",
                     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
-                    background: "#f0f0f0", // خلفية رمادية فاتحة عند غياب الصورة
+                    background: "#f0f0f0",
                   }}
                 >
                   <img

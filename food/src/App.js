@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Header";
 import Introduce from "./Introduce";
@@ -21,7 +20,20 @@ function App() {
   const PricingRef = useRef(null);
 
   const scrollToSection = (ref) => {
-    const offset = -100; // المسافة الإضافية (يمكنك ضبطها حسب الحاجة)
+    const offset = -50;
+    const elementPosition =
+      ref.current.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition + offset,
+      behavior: "smooth",
+    });
+  };
+  const scrollToMealsSection = (ref) => {
+    let offset = -550;
+    if (window.innerWidth < 768) {
+      // لو حجم الشاشة أصغر من 768px (مثلاً موبايل)
+      offset = -150; // خلي الارتفاع أكبر (ارفع أكثر)
+    }
     const elementPosition =
       ref.current.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({
@@ -30,7 +42,6 @@ function App() {
     });
   };
 
-  // دالة التمرير إلى أعلى الصفحة
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -43,7 +54,7 @@ function App() {
       <div>
         <Header
           scrollToAbouUs={() => scrollToSection(AboutUsRef)}
-          scrollToMeals={() => scrollToSection(MealsRef)}
+          scrollToMeals={() => scrollToMealsSection(MealsRef)}
           scrollToPricing={() => scrollToSection(PricingRef)}
         />
       </div>

@@ -1,9 +1,8 @@
-import React from "react";
 import img1 from "./img/00.png";
-import { Button, duration } from "@mui/material";
+import { Button } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Introduce({ scrollToAbouUs, scrollToPricing }) {
   useEffect(() => {
@@ -15,28 +14,24 @@ export default function Introduce({ scrollToAbouUs, scrollToPricing }) {
       <div className="div-intro">
         <div className="div-div-intro">
           <div data-aos="fade-right" data-aos-delay="200">
-            <h1 style={{ width: "500px", fontSize: "50px" }}>
+            <h1 style={{ width: "500px", fontSize: "60px" }}>
               Healthy meals delivered daily to your door
             </h1>
-            <p style={{ width: "550px", fontSize: "25px" }}>
+            <p style={{ width: "550px", fontSize: "35px" }}>
               The smart food subscription that brings you fresh, nutritious
               meals every day, 365 days a year, Customized to fit your taste and
               nutritional needs, helping you eat healthy effortlessly.
             </p>
 
             <Button
-              style={{
-                marginRight: "20px",
-                background: "#355F2E",
-                fontFamily: "Rubik-2",
-              }}
+              className="btn-introduce1"
               variant="contained"
               onClick={scrollToPricing}
             >
               Start With Us
             </Button>
             <Button
-              style={{ background: "#355F2E", fontFamily: "Rubik-2" }}
+              className="btn-introduce2"
               variant="contained"
               onClick={scrollToAbouUs}
             >

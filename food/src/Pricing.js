@@ -1,11 +1,9 @@
-import React from "react";
-// import Container from "@mui/material/Container";
-import { Container, Card, CardContent, Typography } from "@mui/material";
+import { Container, Card, Typography } from "@mui/material";
 import DoneIcon from "@mui/icons-material/Done";
 import { Button } from "@mui/material";
 import { FaDollarSign } from "react-icons/fa";
 import AOS from "aos";
-import "aos/dist/aos.css"; // استيراد ملف CSS الخاص بـ AOS
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 AOS.init({ duration: 500 });
 
@@ -58,13 +56,13 @@ export default function Pricing({ scrollStart }) {
               sx={{
                 position: "relative",
                 width: 345,
-                height: 500, // تحديد ارتفاع ثابت للبطاقة
-                maxHeight: "500px", // تحديد الحد الأقصى للارتفاع في حال كان المحتوى أكثر
+                height: 500,
+                maxHeight: "500px",
                 background: "#e1eacd",
                 border: "2px solid #355F2E",
                 padding: "20px",
                 display: "flex",
-                flexDirection: "column", // تنظيم المحتوى عموديًا
+                flexDirection: "column",
                 transition: "transform 0.3s ease-in-out",
                 "&:hover": {
                   transform: "translateY(-25px)",
@@ -140,7 +138,6 @@ export default function Pricing({ scrollStart }) {
                 ))}
               </div>
 
-              {/* الزر ثابت في أسفل البطاقة باستخدام marginTop: "auto" */}
               <div
                 style={{
                   marginTop: "auto",
@@ -152,7 +149,7 @@ export default function Pricing({ scrollStart }) {
                   variant="contained"
                   style={{
                     width: "70%",
-                    marginTop: "auto", // يثبت الزر في الأسفل بغض النظر عن المحتوى
+                    marginTop: "auto",
                     padding: "10px",
                     fontSize: "20px",
                     background: "#355F2E",

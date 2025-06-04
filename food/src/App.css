@@ -55,7 +55,31 @@
   height: 600px;
 }
 
+.btn-introduce1 {
+  margin-right: 20px !important;
+  background: #355f2e !important;
+  font-family: Rubik-2;
+}
+
+.btn-introduce2 {
+  background: #355f2e !important;
+  font-family: Rubik-2;
+}
+
 /* About Us */
+
+.h1-aboutUs {
+  margin: 0px;
+  margin-top: 50px;
+  font-size: 90px;
+  color: #00000085;
+}
+
+.h2-aboutUs {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
 
 .div-aboutUs1 {
   height: 70vh;
@@ -197,7 +221,8 @@ footer {
 
 @media (max-width: 1003px) {
   .img {
-    height: 350px;
+    height: 700px;
+    margin-top: 10vh;
   }
   .aboutUs {
     margin-top: 0;
@@ -222,5 +247,34 @@ footer {
   }
   .div-intro {
     padding: 50px;
+  }
+  .div-div-intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h2-aboutUs {
+    font-size: 25px;
+  }
+
+  .btn-introduce1 {
+    font-size: 25px !important;
+  }
+  .btn-introduce2 {
+    font-size: 25px !important;
+  }
+
+  .div-meals {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .pricing {
+    padding-top: 100px;
+  }
+
+  footer {
+    height: 20vh;
+    margin-top: 10vh;
   }
 }

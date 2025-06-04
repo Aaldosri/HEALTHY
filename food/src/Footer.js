@@ -1,8 +1,6 @@
-import React from "react";
-import { Typography, Container } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Box } from "@mui/material";
-import Grid from "@mui/material/Grid2"; // استيراد Grid2
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // استيراد أيقونات وسائل التواصل الاجتماعي
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -21,7 +19,7 @@ export default function Footer() {
             href="https://facebook.com"
             style={{
               color: "black",
-              margin: "0 20px", // زيادة المسافة بين الأيقونات
+              margin: "0 20px",
               textDecoration: "none",
               fontSize: "24px",
               transition: "color 0.3s",
@@ -35,7 +33,7 @@ export default function Footer() {
             href="https://twitter.com"
             style={{
               color: "black",
-              margin: "0 20px", // زيادة المسافة بين الأيقونات
+              margin: "0 20px",
               textDecoration: "none",
               fontSize: "24px",
               transition: "color 0.3s",
@@ -49,7 +47,7 @@ export default function Footer() {
             href="https://instagram.com"
             style={{
               color: "black",
-              margin: "0 20px", // زيادة المسافة بين الأيقونات
+              margin: "0 20px",
               textDecoration: "none",
               fontSize: "24px",
               transition: "color 0.3s",
