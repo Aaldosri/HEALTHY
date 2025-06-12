@@ -286,6 +286,9 @@ footer {
   .btn-join {
     font-size: 20px !important;
   }
+  .div-intro {
+    height: auto !important;
+  }
 }
 
 @media (max-width: 1260px) {
@@ -353,7 +356,6 @@ footer {
   }
   .div-intro {
     padding: 50px;
-    height: auto !important;
   }
   .div-div-intro {
     display: flex;
