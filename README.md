@@ -9,6 +9,7 @@ It features a clean, responsive design with categorized meals and smooth animati
 
 ## 🛠️ Technologies Used
 
+
 - HTML
 - CSS
 - React.js
