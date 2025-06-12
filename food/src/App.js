@@ -28,19 +28,6 @@ function App() {
       behavior: "smooth",
     });
   };
-  const scrollToMealsSection = (ref) => {
-    let offset = -550;
-    if (window.innerWidth < 768) {
-      // لو حجم الشاشة أصغر من 768px (مثلاً موبايل)
-      offset = -150; // خلي الارتفاع أكبر (ارفع أكثر)
-    }
-    const elementPosition =
-      ref.current.getBoundingClientRect().top + window.scrollY;
-    window.scrollTo({
-      top: elementPosition + offset,
-      behavior: "smooth",
-    });
-  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -53,31 +40,24 @@ function App() {
     <div className="App">
       <div>
         <Header
-          scrollToAbouUs={() => scrollToSection(AboutUsRef)}
-          scrollToMeals={() => scrollToMealsSection(MealsRef)}
+          scrollToAboutUs={() => scrollToSection(AboutUsRef)}
+          scrollToMeals={() =>
+            scrollToSection(MealsRef, window.innerWidth < 768 ? -150 : -50)
+          }
           scrollToPricing={() => scrollToSection(PricingRef)}
         />
       </div>
 
       <div style={{ background: "#e1eacd" }}>
         <Introduce
-          scrollToAbouUs={() => scrollToSection(AboutUsRef)}
+          scrollToAboutUs={() => scrollToSection(AboutUsRef)}
           scrollToPricing={() => scrollToSection(PricingRef)}
         />
       </div>
 
       <div ref={AboutUsRef}>
         <Container className="aboutUs">
-          <span
-            style={{
-              fontSize: "25px",
-              textTransform: "none",
-              marginTop: "50px",
-              color: "#355F2E",
-            }}
-          >
-            ABOUT US
-          </span>
+          <span className="section-title">ABOUT US</span>
         </Container>
       </div>
 
@@ -92,15 +72,7 @@ function App() {
       <div ref={PricingRef}>
         <div className="pricing">
           <Container>
-            <span
-              style={{
-                fontSize: "25px",
-                textTransform: "none",
-                color: "#355F2E",
-              }}
-            >
-              PRICING
-            </span>
+            <span className="section-title2">PRICING</span>
           </Container>
         </div>
       </div>

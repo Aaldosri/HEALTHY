@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-export default function Introduce({ scrollToAbouUs, scrollToPricing }) {
+export default function Introduce({ scrollToAboutUs, scrollToPricing }) {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -33,7 +33,7 @@ export default function Introduce({ scrollToAbouUs, scrollToPricing }) {
             <Button
               className="btn-introduce2"
               variant="contained"
-              onClick={scrollToAbouUs}
+              onClick={scrollToAboutUs}
             >
               Learn More
             </Button>
@@ -44,6 +44,7 @@ export default function Introduce({ scrollToAbouUs, scrollToPricing }) {
             data-aos-delay="200"
             className="img"
             src={img1}
+            alt="Healthy meals"
           />
         </div>
       </div>

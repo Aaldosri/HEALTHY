@@ -37,6 +37,41 @@
   outline: none;
 }
 
+/* Header */
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  height: 80px;
+  background: #e1eacd;
+}
+
+.header-title {
+  margin: 0;
+  margin-left: 15px;
+  font-family: Rubik, Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #355f2e;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 30px;
+  padding: 20px;
+  font-size: 30px;
+  font-family: Rubik-2;
+  gap: 40px;
+}
+
 /* Introduce */
 
 .div-intro {
@@ -64,6 +99,21 @@
 .btn-introduce2 {
   background: #355f2e !important;
   font-family: Rubik-2;
+}
+
+/* Title */
+
+.section-title {
+  font-size: 25px;
+  text-transform: none;
+  color: #355f2e;
+  margin-top: 50px;
+}
+
+.section-title2 {
+  font-size: 25px;
+  text-transform: none;
+  color: #355f2e;
 }
 
 /* About Us */
@@ -149,6 +199,46 @@
   gap: 20px;
 }
 
+.grid-item-div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: #f0f0f0;
+}
+
+.grid-custom {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.centered-container {
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.span-header {
+  font-size: 25px;
+  text-transform: none;
+  color: #355f2e;
+  margin-left: 2vh;
+}
+
+.img-style {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
 /* Pricing */
 
 .pricing {
@@ -158,6 +248,25 @@
 .h1-pricing {
   margin-left: 200px;
   color: #355f2e;
+}
+
+.best-deal-badge {
+  position: absolute;
+  top: 19px;
+  right: -70px;
+  background: green;
+  color: white;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 190px;
+  transform: rotate(40deg);
+  z-index: 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.span-margin {
+  margin-right: 8px;
 }
 
 /* Footer */
@@ -175,7 +284,7 @@ footer {
 
 @media (max-width: 1374px) {
   .btn-join {
-    font-size: 17px !important;
+    font-size: 20px !important;
   }
   .div-intro {
     height: auto !important;
@@ -198,7 +307,7 @@ footer {
 }
 @media (max-width: 1189px) {
   .btn-join {
-    font-size: 12px !important;
+    font-size: 18px !important;
   }
   .h1-meals {
     width: 100%;

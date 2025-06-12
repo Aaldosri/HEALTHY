@@ -1,40 +1,14 @@
 import Button from "@mui/material/Button";
 
 export default function Header({
-  scrollToAbouUs,
+  scrollToAboutUs,
   scrollToMeals,
   scrollToPricing,
 }) {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          alignContent: "center",
-          textAlign: "center",
-          alignItems: "center",
-          height: "80px",
-          background: "#E1EACD",
-        }}
-      >
-        <h1
-          style={{
-            margin: "0",
-            marginLeft: "15px",
-            fontFamily: "'Roboto', sans-serif",
-            fontSize: "30px",
-            fontWeight: "900",
-            letterSpacing: "2px",
-            textTransform: "uppercase",
-            fontFamily: "Rubik",
-
-            color: "#355F2E",
-            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
-          }}
-        >
-          HEALTHY
-        </h1>
+      <div className="header-container">
+        <h1 className="header-title">HEALTHY</h1>
 
         <div
           style={{
@@ -59,7 +33,7 @@ export default function Header({
               color: "black",
               transition: "color 0.3s ease",
             }}
-            onClick={scrollToAbouUs}
+            onClick={scrollToAboutUs}
             onMouseEnter={(e) => {
               e.target.style.color = "#355F2E";
               e.target.style.boxShadow = "none";
@@ -79,7 +53,6 @@ export default function Header({
               textTransform: "none",
               color: "black",
               fontFamily: "Rubik-2",
-
               transition: "color 0.3s ease",
             }}
             onClick={scrollToMeals}

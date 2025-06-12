@@ -5,7 +5,6 @@ import { FaDollarSign } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-AOS.init({ duration: 500 });
 
 const pricingOptions = [
   {
@@ -76,24 +75,7 @@ export default function Pricing({ scrollStart }) {
               }}
             >
               {option.bestDeal && (
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "19px",
-                    right: "-70px",
-                    background: "green",
-                    color: "white",
-                    padding: "10px 30px",
-                    fontWeight: "bold",
-                    fontSize: "20px",
-                    width: "190px",
-                    transform: "rotate(40deg)",
-                    zIndex: 1,
-                    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                  }}
-                >
-                  Best Deal
-                </div>
+                <div className="best-deal-badge">Best Deal</div>
               )}
 
               <h1 style={{ color: "#355F2E", fontSize: "70px" }}>
@@ -114,7 +96,7 @@ export default function Pricing({ scrollStart }) {
                     color: "text.secondary",
                   }}
                 >
-                  <span style={{ marginRight: "8px" }}>
+                  <span className="span-margin">
                     <DoneIcon style={{ color: "green" }} />
                   </span>
                   {option.mealsPerDay}

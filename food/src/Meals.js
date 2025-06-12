@@ -38,16 +38,7 @@ export default function Meals() {
             container
             spacing={2}
           >
-            <span
-              style={{
-                fontSize: "25px",
-                textTransform: "none",
-                color: "#355F2E",
-                marginLeft: "2vh",
-              }}
-            >
-              MEALS
-            </span>
+            <span className="span-header">MEALS</span>
 
             <h1 className="h1-meals">
               Over 1000+ healthy recipes crafted to suit your taste and promote
@@ -55,37 +46,15 @@ export default function Meals() {
             </h1>
           </Grid>
         </div>
-        <div
-          style={{
-            width: "600px",
-            margin: "0 auto",
-            overflow: "hidden",
-          }}
-        >
+        <div className="centered-container">
           <Grid container spacing={2}>
             {images.map((image, index) => (
-              <Grid size={4} item xs={4} key={index}>
-                <div
-                  style={{
-                    width: "100%",
-                    height: "200px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    overflow: "hidden",
-                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
-                    background: "#f0f0f0",
-                  }}
-                >
+              <Grid size={4} xs={4} key={index}>
+                <div className="grid-item-div">
                   <img
                     src={image}
                     alt={`Image ${index + 1}`}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      transition: "transform 0.3s ease-in-out",
-                    }}
+                    className="img-style"
                     onMouseEnter={(e) => {
                       e.currentTarget.style.transform = "scale(1.1)";
                     }}
