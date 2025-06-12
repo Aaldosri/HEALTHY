@@ -9,9 +9,8 @@ It features a clean, responsive design with categorized meals and smooth animati
 
 ## 🛠️ Technologies Used
 
-
 - HTML
 - CSS
 - React.js
 - Material-UI (MUI)
-- AOS (Animation).
+- AOS (Animation)
