@@ -14,4 +14,4 @@ It features a clean, responsive design with categorized meals and smooth animati
 - CSS
 - React.js
 - Material-UI (MUI)
-- AOS (Animation)
+- AOS (Animation).
