@@ -1,6 +1,6 @@
 # 🥗 HEALTHY
 
-**HEALTHY** is a website for a healthy food restaurant.  
+**HEALTHY** is a website for a healthy food restaurant
 It features a clean, responsive design with categorized meals and smooth animations.
 
 ## 🚀 Live Demo
