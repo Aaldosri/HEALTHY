@@ -1,4 +1,4 @@
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import image1 from "./img/11.jpg";
 import image2 from "./img/22.jpg";
 import image3 from "./img/33.jpg";

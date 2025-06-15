@@ -1,5 +1,5 @@
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import img1 from "./img/Sa.png";
 import img2 from "./img/Eg.png";
 import img4 from "./img/App.png";
